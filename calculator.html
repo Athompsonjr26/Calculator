@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <script src="jquery.js"></script>
+    <script src="calculator.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+      background-color: black;
+
+    }
+
+    button {
+      width: 100px;
+      height: 80px;
+      font-size: 4em;
+      background-color: #85cd32;
+      color: white;
+      transition: 1s;
+    }
+    button:hover {
+      font-size: 1.5em;
+      transform: rotate(360deg);
+    }
+
+    #display {
+      height: 80px;
+      width: 308px;
+      font-size: 4em;
+      text-align: right;
+      background-color: grey;
+    }
+    table
+
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <button id="clear">C</button>
+        </td>
+        <td colspan="3">
+          <input id="display" type="text">
+        </td>
+      </tr>
+      <tr>
+        <td><button class="number">7</button></td>
+        <td><button class="number">8</button></td>
+        <td><button class="number">9</button></td>
+        <td><button class="operator">x</button></td>
+      </tr>
+      <tr>
+        <td><button class="number">4</button></td>
+        <td><button class="number">5</button></td>
+        <td><button class="number">6</button></td>
+        <td><button class="operator">-</button></td>
+      </tr>
+      <tr>
+        <td><button class="number">1</button></td>
+        <td><button class="number">2</button></td>
+        <td><button class="number">3</button></td>
+        <td><button class="operator">+</button></td>
+      </tr>
+      <tr>
+        <td><button class="number">0</button></td>
+        <td><button class="evaluate">=</button></td>
+        <td><button class="operator">/</button></td>
+        <td></td>
+      </tr>
+    </table>
+  </body>
+</html>
